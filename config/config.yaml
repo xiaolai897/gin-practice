@@ -1,0 +1,21 @@
+domain: "localhost"
+
+postgres:
+  host: "127.0.0.1"
+  port: "5432"
+  user: "postgres"
+  password: "postgres"
+  dbname: "test"
+  schema: "public"
+  time-zone: "Asia/Shanghai"
+  sslmode: "disable"
+  max-idle-conns: 20
+  max-open-conns: 100
+
+zap:
+  level: "info"
+  path: "logs/blog.log"
+  max-size: 5
+  max-backup: 30
+  max-age: 180
+  compress: true
